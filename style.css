@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    place-items: center;
+    background-color: antiquewhite;
+    height: 50vh;
+    margin-bottom: 15px;
+}
+
+header  nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    /* position: fixed; */
+}
+
+header nav .logo {
+    font-size: 19px;
+}
+
+header nav .lista-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+header nav .lista-link .link-item {
+    margin: 0 5px;
+}
+
+header  .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: calc(270px * 3 + 30px);
+    width: 100%;
+}
+
+main  {
+    display: grid;
+    place-items: center;
+}
+
+header  .banner .intro .descricao-intro {
+    width: 250px;
+}
+
+header  .slider {
+    width: 400px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .card-box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    width: min-content;
+    gap: 15px;
+    justify-self: center;
+    align-self: center;
+}
+
+main .card-box .card {
+    width: 270px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite ;
+    margin: 10px 0;
+}
+
+main .card-box .card:first-child {
+    background-image: url("https://images.pexels.com/photos/26726444/pexels-photo-26726444/free-photo-of-passaro-ave-passarinho-animal.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+main .card-box .card:nth-child(2) {
+    background-image: url("https://images.pexels.com/photos/27791807/pexels-photo-27791807/free-photo-of-cidade-meio-urbano-arte-ponto-de-referencia.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+main .card-box .card:nth-child(3) {
+    background-image: url("https://images.pexels.com/photos/27015904/pexels-photo-27015904/free-photo-of-areia-animal-bicho-fofo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+main .card-box .card:nth-child(4) {
+    background-image: url("https://images.pexels.com/photos/27372389/pexels-photo-27372389/free-photo-of-geleira-glaciar-neve-panorama.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+main .card-box .card:nth-child(5) {
+    background-image: url("https://images.pexels.com/photos/27912713/pexels-photo-27912713.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+main .card-box .card:nth-child(6) {
+    background-image: url("https://images.pexels.com/photos/20218545/pexels-photo-20218545/free-photo-of-refeicao-comida-mesa-cafe-da-manha.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.box-flutuante {
+    background-color: antiquewhite;
+    height: 75px;
+    max-width: calc(270px * 3 + 30px);
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15%;
+    background-color: antiquewhite;
+    align-items: center;
+    margin-top: 25px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    list-style-type: none;
+}
+
+footer ul li {
+    margin: 0 9px;
+}
